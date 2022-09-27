@@ -23,11 +23,10 @@ int main()
 	{
 		if (r <= a / 2)
 			printf("The circle will fit into a square\n");
-		else if (r > a * sqrt(2) / 2)
-			printf("The square will not fit in the circle\n");
+		else if (r < a * sqrt(2) / 2)
+			printf("The square will not  fit in the circle\n"); //a= 4 r = 2.5
 		else
 			printf("The square will fit in the circle\n");       
-
 	}
 	return 0;            
 	 
