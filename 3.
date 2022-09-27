@@ -1,21 +1,34 @@
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
-	float a, r, pi, s1,s2;
-	pi = 3.14;
+	/*float a, r;
 	printf("Input number a,r\n");
 	scanf_s("%g", &a);
 	scanf_s("%g", &r);
-	s1 = a * a;
-	s2 = pi * r * r;
-	{
-		if (s1 > s2)
-			printf("The circle will fit into a square\nBut the square will not fit into the circle\n");
-		else if (s2 > s1)
-			printf("The circle will not fit in the square\nBut the square will fit in the circle\n");
+	if (r <= a / 2)
+		printf("The circle will fit into a square\n");
+	   else
+		printf("The circle will NOT fit into a square\n");
+		if (r >= a * sqrt(2) / 2)
+			printf("The square will fit in the circle\n");
 		else
-			printf("Incorrect input");
+			printf("The square will NOT fit in the circle\n");
+			*/
+	float a, r;
+	printf("Input number a,r\n");
+	scanf_s("%g", &a);
+	scanf_s("%g", &r);
+	{
+		if (r <= a / 2)
+			printf("The circle will fit into a square\n");
+		else if (r > a * sqrt(2) / 2)
+			printf("The square will not fit in the circle\n");
+		else
+			printf("The square will fit in the circle\n");       
+
 	}
-	return 0; 
+	return 0;            
+	 
 }
